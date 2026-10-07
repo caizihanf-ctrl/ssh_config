@@ -1,0 +1,182 @@
+Host myserverk
+    HostName 20.196.65.105
+    User azureuser
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host chicken
+    HostName 2404:8c80:85:8001::126
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    AddressFamily inet6
+    ProxyCommand ssh -F ~/.ssh/config myserverk nc -X 5 -x 127.0.0.1:40000 %h %p
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host chicken-t
+    HostName fd7a:115c:a1e0::2501:1e96
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    AddressFamily inet6
+    ProxyCommand ssh -F ~/.ssh/config myserverk nc -X 5 -x 127.0.0.1:40000 %h %p
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host N1
+    HostName 192.168.31.252
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host N1-t
+    HostName 100.84.30.72
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host myserverj
+    HostName 14.137.244.228
+    User root
+    Port 4313
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host openwrt
+    HostName 192.168.6.1
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+ Host openwrt-t
+    HostName 100.77.33.28
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3   
+
+Host iStoreOS
+    HostName 192.168.110.22
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host iStoreOS-t
+    HostName 100.114.83.59
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host immortalwrt
+    HostName 192.168.10.2
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host immortalwrt-t
+    HostName 100.99.225.44
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host MyserverSH
+    HostName 111.229.113.19
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host Mac
+    HostName 192.168.31.177
+    User fyxl
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host myservert
+    HostName 54.54.63.239
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host xiaomi
+    HostName 192.168.31.1
+    User root
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host zk
+    HostName 192.168.31.67
+    User kang_zhang
+    Port 22
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host PKX110
+    HostName 192.168.31.90
+    User u0_a405
+    Port 8022
+    IdentityFile ~/.ssh/arch
+    IdentitiesOnly yes
+    PubkeyAuthentication yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
